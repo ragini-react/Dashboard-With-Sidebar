@@ -103,22 +103,10 @@
     }
 
     .developer-details {
-      column-gap: 15px;
+      // column-gap: 10px;
       row-gap: 15px;
       flex-wrap: wrap;
-      margin-left: 20px;
-
-      .dev-Ops {
-        border: 1px solid lightgrey;
-      }
-
-      .python {
-        border: 1px solid lightgrey;
-      }
-
-      .mobile {
-        border: 1px solid lightgrey;
-      }
+      // margin-left: 20px;
 
       .extra-details {
         span {

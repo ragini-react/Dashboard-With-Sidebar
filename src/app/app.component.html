@@ -197,101 +197,157 @@
             </span>
           </button>
         </div>
-
-        <div
-          class="developer-details d-flex p-3 justify-content-center justify-content-xl-between"
+        <swiper-container
+          appSwiper
+          #swiper
+          [config]="swiperConfig"
+          thumbs-swiper=".mySwiper2"
+          (slidechange)="slideChange($event)"
         >
-          <div class="dev-Ops rounded p-3">
-            <div class="d-flex">
-              <span
-                class="material-symbols-outlined book-icon text-center"
-                role="button"
+          <!-- <div
+            class="developer-details d-flex p-3 justify-content-center justify-content-xl-between"
+          > -->
+          <!-- Slide 1 -->
+          <swiper-slide class="developer-details mx-4">
+            <div class="border rounded p-3">
+              <div class="d-flex">
+                <span
+                  class="material-symbols-outlined book-icon text-center"
+                  role="button"
+                >
+                  library_books
+                </span>
+                <div class="px-2">
+                  <h4 class="fw-bolder mb-0">devOps Enjineer</h4>
+                  <p>Remote</p>
+                </div>
+              </div>
+
+              <span class="d-flex align-items-center pt-2"
+                ><span class="material-symbols-outlined" role="button">
+                  currency_rupee
+                </span>
+                Undisclosed</span
               >
-                library_books
+              <span class="d-flex align-items-center pt-2">
+                <span class="material-symbols-outlined" role="button">
+                  spa </span
+                >Full Time Contract . 6 Months
               </span>
-              <div class="px-2">
-                <h4 class="fw-bolder mb-0">devOps Enjineer</h4>
-                <p>Remote</p>
+              <div class="extra-details mt-3">
+                <span>Kubernetes</span>
+                <span>devOps</span>
+                <span>+2</span>
               </div>
             </div>
+          </swiper-slide>
 
-            <span class="d-flex align-items-center pt-2"
-              ><span class="material-symbols-outlined" role="button">
-                currency_rupee
-              </span>
-              Undisclosed</span
-            >
-            <span class="d-flex align-items-center pt-2">
-              <span class="material-symbols-outlined" role="button"> spa </span
-              >Full Time Contract . 6 Months
-            </span>
-            <div class="extra-details mt-3">
-              <span>Kubernetes</span>
-              <span>devOps</span>
-              <span>+2</span>
-            </div>
-          </div>
-          <div class="python rounded p-3">
-            <div class="d-flex">
-              <span
-                class="material-symbols-outlined book-icon text-center"
-                role="button"
+          <!-- Slide 2 -->
+          <swiper-slide class="developer-details">
+            <div class="border rounded p-3">
+              <div class="d-flex">
+                <span
+                  class="material-symbols-outlined book-icon text-center"
+                  role="button"
+                >
+                  library_books
+                </span>
+                <div class="px-2">
+                  <h4 class="fw-bolder mb-0">Python Devloper</h4>
+                  <p>On-Site</p>
+                </div>
+              </div>
+
+              <span class="d-flex align-items-center pt-2"
+                ><span class="material-symbols-outlined" role="button">
+                  currency_rupee
+                </span>
+                35-40 Lacs P.A.</span
               >
-                library_books
+              <span class="d-flex align-items-center pt-2">
+                <span class="material-symbols-outlined" role="button">
+                  spa </span
+                >Full Time . Permanent
               </span>
-              <div class="px-2">
-                <h4 class="fw-bolder mb-0">Python Devloper</h4>
-                <p>On-Site</p>
+              <div class="extra-details mt-3">
+                <span>Kubernetes</span>
+                <span>devOps</span>
+                <span>+2</span>
               </div>
             </div>
+          </swiper-slide>
 
-            <span class="d-flex align-items-center pt-2"
-              ><span class="material-symbols-outlined" role="button">
-                currency_rupee
-              </span>
-              35-40 Lacs P.A.</span
-            >
-            <span class="d-flex align-items-center pt-2">
-              <span class="material-symbols-outlined" role="button"> spa </span
-              >Full Time . Permanent
-            </span>
-            <div class="extra-details mt-3">
-              <span>Kubernetes</span>
-              <span>devOps</span>
-              <span>+2</span>
-            </div>
-          </div>
-          <div class="mobile rounded p-3">
-            <div class="d-flex">
-              <span
-                class="material-symbols-outlined book-icon text-center"
-                role="button"
+          <!-- Slide 3 -->
+          <swiper-slide class="developer-details">
+            <div class="border rounded p-3">
+              <div class="d-flex">
+                <span
+                  class="material-symbols-outlined book-icon text-center"
+                  role="button"
+                >
+                  library_books
+                </span>
+                <div class="px-2">
+                  <h4 class="fw-bolder mb-0">Mobile Developer</h4>
+                  <p>On-Site</p>
+                </div>
+              </div>
+
+              <span class="d-flex align-items-center pt-2"
+                ><span class="material-symbols-outlined" role="button">
+                  currency_rupee
+                </span>
+                35-40 Lacs P.A.</span
               >
-                library_books
+              <span class="d-flex align-items-center pt-2">
+                <span class="material-symbols-outlined" role="button">
+                  spa </span
+                >Full Time . Permanent
               </span>
-              <div class="px-2">
-                <h4 class="fw-bolder mb-0">Mobile Developer</h4>
-                <p>On-Site</p>
+              <div class="extra-details mt-3">
+                <span>Kubernetes</span>
+                <span>devOps</span>
+                <span>+2</span>
               </div>
             </div>
+          </swiper-slide>
 
-            <span class="d-flex align-items-center pt-2"
-              ><span class="material-symbols-outlined" role="button">
-                currency_rupee
+          <!-- Slide 4 -->
+          <swiper-slide>
+            <div class="border rounded p-3">
+              <div class="d-flex">
+                <span
+                  class="material-symbols-outlined book-icon text-center"
+                  role="button"
+                >
+                  library_books
+                </span>
+                <div class="px-2">
+                  <h4 class="fw-bolder mb-0">Mobile Developer</h4>
+                  <p>On-Site</p>
+                </div>
+              </div>
+
+              <span class="d-flex align-items-center pt-2"
+                ><span class="material-symbols-outlined" role="button">
+                  currency_rupee
+                </span>
+                35-40 Lacs P.A.</span
+              >
+              <span class="d-flex align-items-center pt-2">
+                <span class="material-symbols-outlined" role="button">
+                  spa </span
+                >Full Time . Permanent
               </span>
-              35-40 Lacs P.A.</span
-            >
-            <span class="d-flex align-items-center pt-2">
-              <span class="material-symbols-outlined" role="button"> spa </span
-              >Full Time . Permanent
-            </span>
-            <div class="extra-details mt-3">
-              <span>Kubernetes</span>
-              <span>devOps</span>
-              <span>+2</span>
+              <div class="extra-details mt-3">
+                <span>Kubernetes</span>
+                <span>devOps</span>
+                <span>+2</span>
+              </div>
             </div>
-          </div>
-        </div>
+          </swiper-slide>
+          <!-- </div> -->
+        </swiper-container>
       </div>
     </div>
   </main>
